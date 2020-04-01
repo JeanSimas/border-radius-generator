@@ -6,6 +6,13 @@ body {
     background: linear-gradient(to right,#50d36d,#6293ec);
 }
 
+p{
+    font-size: 18px;
+    outline: dashed 7px #fff;
+    padding: 5px;
+    
+    
+}
 
 h1 {
     margin: 50px 0;
@@ -24,7 +31,30 @@ h1 {
             height: 400px;
             border: 1px solid black;
             margin: 0 20px;
+            background: #eee;
+            
         }
+
+
+#div-border a {
+    text-decoration: none;
+    color: #000;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    cursor: pointer;
+}
+#div-border #css {
+    font: bold 15px Monaco, 'Courier New', monospace;
+    background: transparent;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    resize: none;
+}
 
 .inputs-container {
     height: 400px;

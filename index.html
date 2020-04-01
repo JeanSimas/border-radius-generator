@@ -11,20 +11,7 @@
 
 <body>
 
-    <script>
-
-        function change() {
-            const topLeft = document.getElementById('topLeft').value || 0
-            const topRight = document.getElementById('topRight').value || 0
-            const bottomLeft = document.getElementById('bottomLeft').value || 0
-            const bottomRight = document.getElementById('bottomRight').value || 0
-
-            const paragraph = document.getElementById('div-border')
-            paragraph.style.borderRadius = `${topLeft}px ${topRight}px ${bottomRight}px ${bottomLeft}px`;
-
-        }
-
-    </script>
+    <script src="script.js"></script>
     <h1>Border Radius Viewer</h1>
     <div class="content">
         <div class="inputs-container">
@@ -34,7 +21,11 @@
 
 
 
-        <div id="div-border"></div>
+        <div id="div-border">
+            <a onclick="copyText()">
+                <textarea readonly="readonly" id="css"></textarea>
+            </a>
+        </div>
 
         <div class="inputs-container">
             <input type="text" id="topRight" onkeyup="change()" />
@@ -45,7 +36,7 @@
     </div>
 
 
-
+    <p>To copy the css just click the box</p>
 
 
 </body>
