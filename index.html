@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <script>
+
+        function change() {
+            const topLeft = document.getElementById('topLeft').value || 0
+            const topRight = document.getElementById('topRight').value || 0
+            const bottomLeft = document.getElementById('bottomLeft').value || 0
+            const bottomRight = document.getElementById('bottomRight').value || 0
+
+            const paragraph = document.getElementById('div-border')
+            paragraph.style.borderRadius = `${topLeft}px ${topRight}px ${bottomRight}px ${bottomLeft}px`;
+
+        }
+
+    </script>
+    <h1>Border Radius Viewer</h1>
+    <div class="content">
+        <div class="inputs-container">
+            <input type="text" id="topLeft" onkeyup="change()" />
+            <input type="text" id="bottomLeft" onkeyup="change()">
+        </div>
+
+
+
+        <div id="div-border"></div>
+
+        <div class="inputs-container">
+            <input type="text" id="topRight" onkeyup="change()" />
+            <input type="text" id="bottomRight" onkeyup="change()">
+        </div>
+
+
+    </div>
+
+
+
+
+
+</body>
+
+
+
+</html>
